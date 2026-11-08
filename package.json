@@ -1,0 +1,19 @@
+{
+  "name": "easyenglish",
+  "private": true,
+  "description": "EasyEnglish — learn English with AI (Next.js PWA).",
+  "scripts": {
+    "dev": "next dev -p 5173",
+    "build": "next build",
+    "start": "next start -p 5173",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^16.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
