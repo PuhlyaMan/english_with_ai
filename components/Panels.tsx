@@ -1,4 +1,9 @@
-const CARDS = [
+type Card = {
+  title: string;
+  text: string;
+};
+
+const CARDS: Card[] = [
   {
     title: "Speak",
     text: "Short conversations you can repeat out loud."

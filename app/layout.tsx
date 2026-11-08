@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import "./globals.css";
 import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
 
@@ -8,7 +9,7 @@ export const metadata = {
   appleWebApp: {
     capable: true,
     title: "EasyEnglish",
-    statusBarStyle: "default"
+    statusBarStyle: "default" as const
   },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
@@ -20,10 +21,10 @@ export const viewport = {
   themeColor: "#1d4ed8",
   width: "device-width",
   initialScale: 1,
-  viewportFit: "cover"
+  viewportFit: "cover" as const
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>

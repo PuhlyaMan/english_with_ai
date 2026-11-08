@@ -1,6 +1,6 @@
 import { useSyncExternalStore } from "react";
 
-function subscribe(onStoreChange) {
+function subscribe(onStoreChange: () => void) {
   window.addEventListener("online", onStoreChange);
   window.addEventListener("offline", onStoreChange);
   return () => {
@@ -9,6 +9,6 @@ function subscribe(onStoreChange) {
   };
 }
 
-export function useOnlineStatus() {
+export function useOnlineStatus(): boolean {
   return useSyncExternalStore(subscribe, () => navigator.onLine, () => true);
 }

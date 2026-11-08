@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export function TopBar({ online, canInstall, onInstall }) {
+type TopBarProps = {
+  online: boolean;
+  canInstall: boolean;
+  onInstall: () => void | Promise<void>;
+};
+
+export function TopBar({ online, canInstall, onInstall }: TopBarProps) {
   return (
     <header className="topbar">
       <div className="brand">

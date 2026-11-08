@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import type { BeforeInstallPromptEvent } from "@/types/beforeinstallprompt";
 
 export function useInstallPrompt() {
-  const [promptEvent, setPromptEvent] = useState(null);
+  const [promptEvent, setPromptEvent] = useState<BeforeInstallPromptEvent | null>(null);
 
   useEffect(() => {
-    function onPrompt(event) {
+    function onPrompt(event: BeforeInstallPromptEvent) {
       event.preventDefault();
       setPromptEvent(event);
     }
