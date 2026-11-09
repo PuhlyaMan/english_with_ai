@@ -1,24 +1,44 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import { describe, expect, it, vi } from "vitest";
+import type { ReactNode } from "react";
+import { cleanup, render, screen } from "@testing-library/react";
+import { afterEach, describe, expect, it, vi } from "vitest";
 import { TabBar } from "./TabBar";
-import type { TabItem } from "@/types/tabs";
 
-const TABS: TabItem[] = [
-  { id: "home", label: "Home" },
-  { id: "practice", label: "Practice" },
-  { id: "progress", label: "Progress" },
-];
+vi.mock("next/link", () => ({
+  default: ({
+    children,
+    href,
+    ...props
+  }: {
+    children: ReactNode;
+    href: string;
+    className?: string;
+    "aria-current"?: "page";
+  }) => (
+    <a href={href} {...props}>
+      {children}
+    </a>
+  ),
+}));
+
+const usePathnameMock = vi.fn();
+
+vi.mock("next/navigation", () => ({
+  usePathname: () => usePathnameMock(),
+}));
 
 describe("TabBar", () => {
-  it("renders tabs and calls onChange when a tab is clicked", () => {
-    const onChange = vi.fn();
+  afterEach(() => {
+    cleanup();
+    usePathnameMock.mockReset();
+  });
 
-    render(<TabBar tabs={TABS} current="home" onChange={onChange} />);
+  it("renders nav links and marks the current route", () => {
+    usePathnameMock.mockReturnValue("/dictionary");
 
-    expect(screen.getByRole("button", { name: "Home" })).toHaveAttribute("aria-current", "page");
+    render(<TabBar />);
 
-    fireEvent.click(screen.getByRole("button", { name: "Practice" }));
-
-    expect(onChange).toHaveBeenCalledWith("practice");
+    expect(screen.getByRole("link", { name: "Dictionary" })).toHaveAttribute("aria-current", "page");
+    expect(screen.getByRole("link", { name: "Home" })).toHaveAttribute("href", "/");
+    expect(screen.getByRole("link", { name: "Dictionary" })).toHaveAttribute("href", "/dictionary");
   });
 });

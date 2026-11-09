@@ -5,7 +5,7 @@
   transform: translateX(-50%);
   width: min(40rem, calc(100% - 1.5rem));
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.25rem;
   padding: 0.35rem;
   background: rgb(255 255 255 / 94%);
@@ -15,21 +15,28 @@
   backdrop-filter: blur(10px);
 }
 
-.tabButton {
+.tabLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 0;
   border-radius: 999px;
-  padding: 0.7rem 0.4rem;
+  padding: 0.7rem 0.35rem;
   background: transparent;
   color: var(--muted);
   cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  text-align: center;
+  text-decoration: none;
 }
 
-.tabButton:focus-visible {
+.tabLink:focus-visible {
   outline: 3px solid #93c5fd;
   outline-offset: 2px;
 }
 
-.tabButtonActive {
+.tabLinkActive {
   background: #dbeafe;
   color: var(--primary);
   font-weight: 600;
