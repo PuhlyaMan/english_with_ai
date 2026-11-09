@@ -4,13 +4,13 @@ Application for learning English with AI. The UI is React 19 on **Next.js** (App
 
 ## Requirements
 
-Node.js **20.9+** (Next.js 16). Use `.nvmrc` if you use nvm.
+Node.js **22.22+** (see `.nvmrc`). TypeScript **6.x**.
 
 ## Development
 
 ```bash
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173).
@@ -18,8 +18,8 @@ Open [http://localhost:5173](http://localhost:5173).
 ## Production server
 
 ```bash
-npm run build
-npm start
+yarn build
+yarn start
 ```
 
 `next start` serves the production build on port **5173**.

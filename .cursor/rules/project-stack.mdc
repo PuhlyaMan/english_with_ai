@@ -6,7 +6,7 @@ alwaysApply: true
 # Стек проекта
 
 - **React 19**, **Next.js 16** (только App Router, папка `app/`).
-- **TypeScript 7** (строгий режим).
+- **TypeScript 6** (строгий режим).
 - **Голый CSS** через CSS Modules (`.module.css`). Никаких Tailwind, styled-components, SCSS или инлайн-стилей.
 - Стейт-менеджеров и библиотек для запросов пока нет. Не предлагай Redux, Zustand, TanStack Query.
 
