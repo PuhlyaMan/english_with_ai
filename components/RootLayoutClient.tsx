@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import styles from "./RootLayoutClient.module.css";
 import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
+import { StoreProvider } from "@/src/stores/StoreProvider";
 
 interface RootLayoutClientProps {
   children: ReactNode;
@@ -10,9 +11,11 @@ interface RootLayoutClientProps {
 
 export function RootLayoutClient({ children }: RootLayoutClientProps) {
   return (
-    <div className={styles.shell}>
-      {children}
-      <ServiceWorkerRegistration />
-    </div>
+    <StoreProvider>
+      <div className={styles.shell}>
+        {children}
+        <ServiceWorkerRegistration />
+      </div>
+    </StoreProvider>
   );
 }

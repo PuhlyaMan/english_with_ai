@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./HomePanel.module.css";
+import { CounterExample } from "@/src/components/CounterExample/CounterExample";
 
 interface Card {
   title: string;
@@ -38,6 +39,7 @@ export function HomePanel() {
           </li>
         ))}
       </ul>
+      <CounterExample />
     </section>
   );
 }
