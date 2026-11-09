@@ -24,14 +24,6 @@ yarn start
 
 `next start` serves the production build on port **5173**.
 
-## PWA
-
-- `app/manifest.js` — web app manifest (EasyEnglish)
-- `public/sw.js` — service worker (registered in production), offline fallback to `public/offline.html`
-- `public/icons/` — install icons
-
-The service worker registers after `npm run build` + `npm start` (not in development).
-
 ## API
 
 `GET /api/health` — example Next.js Route Handler.

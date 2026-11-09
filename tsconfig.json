@@ -23,9 +23,11 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "@/stores/*": ["./src/stores/*"],
+      "@/features/*": ["./src/features/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/types/*": ["./src/types/*"]
     }
   },
   "include": [

@@ -2,8 +2,7 @@
 
 import type { ReactNode } from "react";
 import styles from "./RootLayoutClient.module.css";
-import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
-import { StoreProvider } from "@/src/stores/StoreProvider";
+import { StoreProvider } from "@/stores/StoreContext";
 
 interface RootLayoutClientProps {
   children: ReactNode;
@@ -12,10 +11,7 @@ interface RootLayoutClientProps {
 export function RootLayoutClient({ children }: RootLayoutClientProps) {
   return (
     <StoreProvider>
-      <div className={styles.shell}>
-        {children}
-        <ServiceWorkerRegistration />
-      </div>
+      <div className={styles.shell}>{children}</div>
     </StoreProvider>
   );
 }

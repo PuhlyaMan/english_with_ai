@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./HomePanel.module.css";
-import { CounterExample } from "@/src/components/CounterExample/CounterExample";
 
 interface Card {
   title: string;
@@ -11,16 +10,16 @@ interface Card {
 const CARDS: Card[] = [
   {
     title: "Speak",
-    text: "Short conversations you can repeat out loud."
+    text: "Short conversations you can repeat out loud.",
   },
   {
     title: "Words",
-    text: "A small set of words to review when you have a minute."
+    text: "A small set of words to review when you have a minute.",
   },
   {
     title: "Listen",
-    text: "Hear a phrase, then try it in your own words."
-  }
+    text: "Hear a phrase, then try it in your own words.",
+  },
 ];
 
 export function HomePanel() {
@@ -29,7 +28,8 @@ export function HomePanel() {
       <p className={styles.eyebrow}>English with AI</p>
       <h1 className={styles.title}>Practice a little every day.</h1>
       <p className={styles.lead}>
-        EasyEnglish runs on Next.js and works as an installable PWA. Lessons, conversation, and progress will live here.
+        EasyEnglish helps you practice a little every day. Lessons, conversation, and progress will live
+        here.
       </p>
       <ul className={styles.cards}>
         {CARDS.map((card) => (
@@ -39,7 +39,6 @@ export function HomePanel() {
           </li>
         ))}
       </ul>
-      <CounterExample />
     </section>
   );
 }

@@ -1,6 +1,4 @@
-"use client";
-
-import { EasyEnglishApp } from "@/components/EasyEnglishApp";
+import { EasyEnglishApp } from "@/features/app-shell/components/EasyEnglishApp/EasyEnglishApp";
 
 export function HomePage() {
   return <EasyEnglishApp />;

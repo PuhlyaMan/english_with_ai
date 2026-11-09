@@ -14,7 +14,9 @@ export function TabBar({ tabs, current, onChange }: TabBarProps) {
     <nav className={styles.tabbar} aria-label="Primary">
       {tabs.map((tab) => {
         const isActive = tab.id === current;
-        const buttonClassName = isActive ? `${styles.tabButton} ${styles.tabButtonActive}` : styles.tabButton;
+        const buttonClassName = isActive
+          ? `${styles.tabButton} ${styles.tabButtonActive}`
+          : styles.tabButton;
 
         return (
           <button

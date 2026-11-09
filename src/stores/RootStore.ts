@@ -1,9 +1,7 @@
-import { CounterStore } from "@/src/stores/CounterStore";
+import { makeAutoObservable } from "mobx";
 
 export class RootStore {
-  readonly counterStore: CounterStore;
-
   constructor() {
-    this.counterStore = new CounterStore();
+    makeAutoObservable(this);
   }
 }

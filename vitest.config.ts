@@ -6,7 +6,11 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname)
+      "@": path.resolve(__dirname),
+      "@/stores": path.resolve(__dirname, "src/stores"),
+      "@/features": path.resolve(__dirname, "src/features"),
+      "@/components": path.resolve(__dirname, "src/components"),
+      "@/types": path.resolve(__dirname, "src/types")
     }
   },
   test: {

@@ -1,7 +1,7 @@
 {
   "name": "easyenglish",
   "private": true,
-  "description": "EasyEnglish — learn English with AI (Next.js PWA).",
+  "description": "EasyEnglish — learn English with AI (Next.js).",
   "scripts": {
     "dev": "next dev -p 5173",
     "build": "next build",
