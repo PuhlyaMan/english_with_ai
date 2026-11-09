@@ -1,9 +1,12 @@
 "use client";
 
-import { useEffect, useState, type JSX } from "react";
+import { useState, type JSX } from "react";
+import styles from "./EasyEnglishApp.module.css";
 import { TabBar } from "@/components/TabBar";
 import { TopBar } from "@/components/TopBar";
-import { HomePanel, PracticePanel, ProgressPanel } from "@/components/Panels";
+import { HomePanel } from "@/components/HomePanel";
+import { PracticePanel } from "@/components/PracticePanel";
+import { ProgressPanel } from "@/components/ProgressPanel";
 import { useInstallPrompt } from "@/hooks/useInstallPrompt";
 import { useOnlineStatus } from "@/hooks/useOnlineStatus";
 import type { TabId, TabItem } from "@/types/tabs";
@@ -26,14 +29,10 @@ export function EasyEnglishApp() {
   const [tab, setTab] = useState<TabId>("home");
   const Panel = PANELS[tab];
 
-  useEffect(() => {
-    document.documentElement.dataset.online = online ? "true" : "false";
-  }, [online]);
-
   return (
-    <div className="app">
+    <div className={styles.app}>
       <TopBar online={online} canInstall={canInstall} onInstall={install} />
-      <main>
+      <main className={styles.main}>
         <Panel />
       </main>
       <TabBar tabs={TABS} current={tab} onChange={setTab} />

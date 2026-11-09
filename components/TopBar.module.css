@@ -1,0 +1,49 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brandIcon {
+  border-radius: 0.7rem;
+}
+
+.brandName,
+.brandStatus {
+  margin: 0;
+}
+
+.brandName {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.brandStatus {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.brandStatusOffline {
+  color: #b45309;
+}
+
+.install {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  background: var(--primary);
+  color: var(--primary-ink);
+  cursor: pointer;
+}
+
+.install:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}

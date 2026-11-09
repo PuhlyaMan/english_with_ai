@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
-import "./globals.css";
-import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
+import { RootLayoutClient } from "@/components/RootLayoutClient";
 
 export const metadata = {
   title: "EasyEnglish",
@@ -24,12 +23,15 @@ export const viewport = {
   viewportFit: "cover" as const
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        {children}
-        <ServiceWorkerRegistration />
+        <RootLayoutClient>{children}</RootLayoutClient>
       </body>
     </html>
   );

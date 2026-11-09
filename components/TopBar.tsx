@@ -1,23 +1,35 @@
-import Image from "next/image";
+"use client";
 
-type TopBarProps = {
+import Image from "next/image";
+import styles from "./TopBar.module.css";
+
+interface TopBarProps {
   online: boolean;
   canInstall: boolean;
   onInstall: () => void | Promise<void>;
-};
+}
 
 export function TopBar({ online, canInstall, onInstall }: TopBarProps) {
+  const statusClassName = online ? styles.brandStatus : `${styles.brandStatus} ${styles.brandStatusOffline}`;
+
   return (
-    <header className="topbar">
-      <div className="brand">
-        <Image src="/icons/icon-192.png" width={40} height={40} alt="" priority />
+    <header className={styles.topbar}>
+      <div className={styles.brand}>
+        <Image
+          className={styles.brandIcon}
+          src="/icons/icon-192.png"
+          width={40}
+          height={40}
+          alt=""
+          priority
+        />
         <div>
-          <p className="brand-name">EasyEnglish</p>
-          <p className="brand-status">{online ? "Online" : "Offline"}</p>
+          <p className={styles.brandName}>EasyEnglish</p>
+          <p className={statusClassName}>{online ? "Online" : "Offline"}</p>
         </div>
       </div>
       {canInstall ? (
-        <button type="button" className="install" onClick={onInstall}>
+        <button type="button" className={styles.install} onClick={onInstall}>
           Install
         </button>
       ) : null}

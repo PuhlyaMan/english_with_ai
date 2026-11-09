@@ -1,0 +1,36 @@
+.tabbar {
+  position: fixed;
+  left: 50%;
+  bottom: calc(0.75rem + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  width: min(40rem, calc(100% - 1.5rem));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+  padding: 0.35rem;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.tabButton {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.7rem 0.4rem;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.tabButton:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+.tabButtonActive {
+  background: #dbeafe;
+  color: var(--primary);
+  font-weight: 600;
+}

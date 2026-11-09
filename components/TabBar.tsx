@@ -1,24 +1,33 @@
+"use client";
+
+import styles from "./TabBar.module.css";
 import type { TabId, TabItem } from "@/types/tabs";
 
-type TabBarProps = {
+interface TabBarProps {
   tabs: TabItem[];
   current: TabId;
   onChange: (id: TabId) => void;
-};
+}
 
 export function TabBar({ tabs, current, onChange }: TabBarProps) {
   return (
-    <nav className="tabbar" aria-label="Primary">
-      {tabs.map((tab) => (
-        <button
-          key={tab.id}
-          type="button"
-          aria-current={tab.id === current ? "page" : undefined}
-          onClick={() => onChange(tab.id)}
-        >
-          {tab.label}
-        </button>
-      ))}
+    <nav className={styles.tabbar} aria-label="Primary">
+      {tabs.map((tab) => {
+        const isActive = tab.id === current;
+        const buttonClassName = isActive ? `${styles.tabButton} ${styles.tabButtonActive}` : styles.tabButton;
+
+        return (
+          <button
+            key={tab.id}
+            type="button"
+            className={buttonClassName}
+            aria-current={isActive ? "page" : undefined}
+            onClick={() => onChange(tab.id)}
+          >
+            {tab.label}
+          </button>
+        );
+      })}
     </nav>
   );
 }

@@ -1,5 +1,9 @@
+"use client";
+
 import { EasyEnglishApp } from "@/components/EasyEnglishApp";
 
-export default function HomePage() {
+export function HomePage() {
   return <EasyEnglishApp />;
 }
+
+export default HomePage;
