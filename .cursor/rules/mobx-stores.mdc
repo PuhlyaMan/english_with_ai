@@ -1,0 +1,26 @@
+---
+description: "Паттерны MobX 7 для React 19 без Provider/inject"
+globs: ["src/stores/**/*.ts", "src/stores/**/*.tsx"]
+alwaysApply: false
+---
+
+# MobX 7 в EasyEnglish
+
+## Создание стора
+
+- Используй `makeAutoObservable` из `mobx` в конструкторе или `makeObservable` с явной картой аннотаций.
+- **Не используй** декораторы (они требуют Stage 3 и дополнительной настройки TypeScript). Предпочитай `makeAutoObservable`.
+- **Не используй** namespaced API вроде `observable.ref`, `computed.struct`, `action.bound`. В MobX 7 они заменены на именованные экспорты: `observableRef`, `computedStruct`, `actionBound` [citation:6][citation:13].
+
+## Провайдер стора (обязательный паттерн)
+
+- **НЕ используй** `Provider` или `inject` из `mobx-react` / `mobx-react-lite` — они удалены [citation:6][citation:13].
+- Создай `StoreContext` через `React.createContext` в файле `src/stores/StoreContext.tsx` (с `'use client'`).
+- Создай хук `useStore()` для доступа к стору.
+- Создай `StoreProvider` (клиентский компонент) и оберни им `layout.tsx`.
+
+## Пример структуры
+
+- `src/stores/RootStore.ts` — класс с `makeAutoObservable(this)`.
+- `src/stores/StoreContext.tsx` — `createContext`, `useStore`, `StoreProvider`.
+- **Не экспортируй синглтон-стор** (`export const store = new RootStore()`). Это ломает SSR в Next.js: состояние может «протечь» между запросами.

@@ -1,5 +1,5 @@
 ---
-description: "Стандарты для React-компонентов"
+description: "Стандарты для React-компонентов EasyEnglish"
 globs: ["**/*.tsx", "!**/*.test.tsx", "!**/*.spec.tsx"]
 alwaysApply: false
 ---
@@ -8,16 +8,16 @@ alwaysApply: false
 
 ## Клиентские компоненты
 
-- **ВСЕ** компоненты в этом проекте клиентские. Начинай каждый `.tsx` файл с директивы `'use client'` на первой строке (до импортов)[citation:4].
+- **ВСЕ** компоненты в этом проекте клиентские. Начинай каждый `.tsx` файл с директивы `'use client'` на первой строке (до импортов).
 - Не создавай серверные компоненты, даже если задача кажется статичной.
 
 ## Структура файла
 
 1. `'use client'`
-2. Импорты (React, Next.js, стили, другие компоненты).
+2. Импорты (React, Next.js, MobX, стили, другие компоненты).
 3. Интерфейс пропсов: `interface [ComponentName]Props { ... }` (над компонентом).
 4. Функция компонента: `export function ComponentName({ ... }: ComponentNameProps) { ... }`.
-5. Экспорт только именованный (`export function`), не `export default`.
+5. Если компонент использует MobX-стор, оберни его в `observer` из `mobx-react-lite` и используй хук `useStore` (из вашего контекста).
 
 ## Размер
 
@@ -27,4 +27,4 @@ alwaysApply: false
 ## Стили
 
 - Каждый компонент использует свой CSS Module: `import styles from './ComponentName.module.css'`.
-- Имена классов в CSS пиши в **camelCase** (например, `.userProfile`), чтобы обращаться к ним как `styles.userProfile`[citation:2].
+- Имена классов в CSS пиши в **camelCase** (например, `.userProfile`), чтобы обращаться к ним как `styles.userProfile`.

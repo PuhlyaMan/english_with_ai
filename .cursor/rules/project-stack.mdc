@@ -1,18 +1,20 @@
 ---
-description: "Базовый стек и запрещённые паттерны проекта"
+description: "Базовый стек и запрещённые паттерны проекта EasyEnglish"
 alwaysApply: true
 ---
 
 # Стек проекта
 
 - **React 19**, **Next.js 16** (только App Router, папка `app/`).
-- **TypeScript 6** (строгий режим).
+- **TypeScript 6.0** (строгий режим). Не используй синтаксис, доступный только в TS 7, если он не компилируется в 6.0.
 - **Голый CSS** через CSS Modules (`.module.css`). Никаких Tailwind, styled-components, SCSS или инлайн-стилей.
-- Стейт-менеджеров и библиотек для запросов пока нет. Не предлагай Redux, Zustand, TanStack Query.
+- **MobX 7** + **mobx-react-lite 5** для глобального состояния. React 19, только функциональные компоненты.
+- **Vitest 5** для тестов. Тесты лежат рядом с компонентами: `ComponentName.test.tsx`.
 
-# Запрещено
+## Запрещено
 
 - **НИКОГДА** не используй Pages Router (`pages/`), `getServerSideProps`, `getStaticProps`.
 - **НИКОГДА** не используй классовые компоненты. Только функции с хуками.
 - **НИКОГДА** не используй `any` в TypeScript.
-- **НИКОГДА** не создавай `.css` файлы без суффикса `.module` (глобальные стили не используются).
+- **НИКОГДА** не создавай `.css` файлы без суффикса `.module`.
+- **НИКОГДА** не используй `Provider`, `inject` или `MobXProviderContext` из `mobx-react` или `mobx-react-lite` — они удалены в MobX 7 / mobx-react-lite 5 [citation:6][citation:13]. Для провайдера стора используй `React.createContext`.
