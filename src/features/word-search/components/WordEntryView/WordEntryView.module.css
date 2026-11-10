@@ -1,0 +1,106 @@
+.entry {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1.25rem 1.25rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.word {
+  margin: 0;
+  font-size: 1.75rem;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.phonetics {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.phonetic {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.phoneticText {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.playButton {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  background: var(--bg);
+  color: var(--primary);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.playButton:hover {
+  border-color: var(--primary);
+}
+
+.meaning {
+  margin-top: 1rem;
+}
+
+.meaning:first-of-type {
+  margin-top: 0;
+}
+
+.partOfSpeech {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--primary);
+}
+
+.definitions {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.definition {
+  padding-left: 0.15rem;
+}
+
+.definitionText {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.example {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.meta {
+  margin: 0.65rem 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.metaLabel {
+  color: var(--ink);
+  font-weight: 600;
+}

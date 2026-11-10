@@ -1,33 +1,38 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import styles from "./TabBar.module.css";
-import type { TabId, TabItem } from "@/types/tabs";
+import { PRIMARY_NAV_TABS } from "@/types/tabs";
 
-interface TabBarProps {
-  tabs: TabItem[];
-  current: TabId;
-  onChange: (id: TabId) => void;
+function isActiveTab(pathname: string, href: string) {
+  if (href === "/") {
+    return pathname === "/";
+  }
+
+  return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-export function TabBar({ tabs, current, onChange }: TabBarProps) {
+export function TabBar() {
+  const pathname = usePathname();
+
   return (
     <nav className={styles.tabbar} aria-label="Primary">
-      {tabs.map((tab) => {
-        const isActive = tab.id === current;
-        const buttonClassName = isActive
-          ? `${styles.tabButton} ${styles.tabButtonActive}`
-          : styles.tabButton;
+      {PRIMARY_NAV_TABS.map((tab) => {
+        const isActive = isActiveTab(pathname, tab.href);
+        const tabClassName = isActive
+          ? `${styles.tabLink} ${styles.tabLinkActive}`
+          : styles.tabLink;
 
         return (
-          <button
-            key={tab.id}
-            type="button"
-            className={buttonClassName}
+          <Link
+            key={tab.href}
+            href={tab.href}
+            className={tabClassName}
             aria-current={isActive ? "page" : undefined}
-            onClick={() => onChange(tab.id)}
           >
             {tab.label}
-          </button>
+          </Link>
         );
       })}
     </nav>

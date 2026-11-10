@@ -1,8 +1,11 @@
-export const TAB_IDS = ["home", "practice", "progress"] as const;
-
-export type TabId = (typeof TAB_IDS)[number];
-
-export type TabItem = {
-  id: TabId;
+export type NavTabItem = {
+  href: string;
   label: string;
 };
+
+export const PRIMARY_NAV_TABS: NavTabItem[] = [
+  { href: "/", label: "Home" },
+  { href: "/word-search", label: "Word search" },
+  { href: "/practice", label: "Practice" },
+  { href: "/progress", label: "Progress" },
+];
