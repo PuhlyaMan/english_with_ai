@@ -33,12 +33,12 @@ describe("TabBar", () => {
   });
 
   it("renders nav links and marks the current route", () => {
-    usePathnameMock.mockReturnValue("/dictionary");
+    usePathnameMock.mockReturnValue("/word-search");
 
     render(<TabBar />);
 
-    expect(screen.getByRole("link", { name: "Dictionary" })).toHaveAttribute("aria-current", "page");
+    expect(screen.getByRole("link", { name: "Word search" })).toHaveAttribute("aria-current", "page");
     expect(screen.getByRole("link", { name: "Home" })).toHaveAttribute("href", "/");
-    expect(screen.getByRole("link", { name: "Dictionary" })).toHaveAttribute("href", "/dictionary");
+    expect(screen.getByRole("link", { name: "Word search" })).toHaveAttribute("href", "/word-search");
   });
 });

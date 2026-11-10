@@ -4,7 +4,7 @@ import { useCallback, useState } from "react";
 import { fetchDictionaryEntry } from "@/lib/dictionary/fetchDictionaryEntry";
 import type { DictionaryEntry } from "@/types/dictionary";
 
-export function useDictionarySearch() {
+export function useWordSearch() {
   const [query, setQuery] = useState("");
   const [entries, setEntries] = useState<DictionaryEntry[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);

@@ -1,12 +1,12 @@
 "use client";
 
 import type { FormEvent } from "react";
-import { useDictionarySearch } from "@/features/dictionary/hooks/useDictionarySearch";
-import { WordEntryView } from "@/features/dictionary/components/WordEntryView/WordEntryView";
+import { useWordSearch } from "@/features/word-search/hooks/useWordSearch";
+import { WordEntryView } from "@/features/word-search/components/WordEntryView/WordEntryView";
 import styles from "./WordLookupPanel.module.css";
 
 export function WordLookupPanel() {
-  const { query, setQuery, entries, isLoading, errorMessage, search } = useDictionarySearch();
+  const { query, setQuery, entries, isLoading, errorMessage, search } = useWordSearch();
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -15,7 +15,7 @@ export function WordLookupPanel() {
 
   return (
     <section className={styles.panel}>
-      <p className={styles.eyebrow}>Dictionary</p>
+      <p className={styles.eyebrow}>Word search</p>
       <h1 className={styles.title}>Look up a word</h1>
       <p className={styles.lead}>Enter an English word and search the Free Dictionary API.</p>
 
