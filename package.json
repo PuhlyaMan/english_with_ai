@@ -1,0 +1,52 @@
+{
+  "name": "easyenglish",
+  "private": true,
+  "description": "EasyEnglish — learn English with AI (Next.js).",
+  "scripts": {
+    "dev": "next dev -p 5173",
+    "build": "next build",
+    "start": "next start -p 5173",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "stylelint": "stylelint \"**/*.module.css\"",
+    "stylelint:fix": "stylelint \"**/*.module.css\" --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "mobx": "^7.1.5",
+    "mobx-react-lite": "^5.1.2",
+    "next": "^16.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "packageManager": "yarn@4.18.1",
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "@vitest/coverage-v8": "^5.1.0",
+    "eslint": "^10.14.0",
+    "eslint-config-next": "^16.4.5",
+    "eslint-config-prettier": "^10.1.8",
+    "jsdom": "24.1.3",
+    "prettier": "^3.9.10",
+    "stylelint": "^18.0.0",
+    "stylelint-config-standard": "^41.0.0",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.6",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^5.1.0"
+  }
+}
