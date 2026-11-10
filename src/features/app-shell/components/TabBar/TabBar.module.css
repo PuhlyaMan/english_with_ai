@@ -5,7 +5,7 @@
   transform: translateX(-50%);
   width: min(40rem, calc(100% - 1.5rem));
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0.25rem;
   padding: 0.35rem;
   background: rgb(255 255 255 / 94%);

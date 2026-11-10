@@ -1,0 +1,42 @@
+[
+  {
+    "id": "in-on-at-time",
+    "title": "in / on / at (время)",
+    "rule": "in — месяцы, годы, длительные периоды (in May, in 2024); on — дни и даты (on Monday, on July 4); at — точное время и устойчивые выражения (at 7 pm, at night, at the weekend — BrE).",
+    "examples": [
+      "We met in spring. — Мы встретились весной.",
+      "The lesson is on Friday. — Урок в пятницу.",
+      "The meeting starts at 10:00. — Встреча начинается в 10:00."
+    ]
+  },
+  {
+    "id": "in-on-at-place",
+    "title": "in / on / at (место)",
+    "rule": "in — внутри пространства или страна/город (in the room, in France); on — поверхность, этаж, транспорт (on the table, on the bus); at — точка прибытия, событие, адрес (at the station, at home, at 12 Oak Street).",
+    "examples": [
+      "She works in a hospital. — Она работает в больнице.",
+      "The keys are on the shelf. — Ключи на полке.",
+      "I'll wait for you at the entrance. — Я подожду тебя у входа."
+    ]
+  },
+  {
+    "id": "to-for",
+    "title": "to / for",
+    "rule": "to — направление движения или получатель действия (go to school, give it to me); for — цель/благополучатель, период времени (a gift for you, for three hours).",
+    "examples": [
+      "He walked to the shop. — Он пошёл в магазин (пешком).",
+      "This letter is for Anna. — Это письмо для Анны.",
+      "We stayed there for two days. — Мы пробыли там два дня."
+    ]
+  },
+  {
+    "id": "by-with",
+    "title": "by / with",
+    "rule": "by — способ, агент в пассиве, дедлайн (by car, written by him, by Friday); with — инструмент, сопровождение, характеристика (with a knife, with my brother, coffee with milk).",
+    "examples": [
+      "She travels by train. — Она путешествует поездом.",
+      "The book was written by Tolkien. — Книга написана Толкином.",
+      "I cut the bread with a knife. — Я разрезал хлеб ножом."
+    ]
+  }
+]
