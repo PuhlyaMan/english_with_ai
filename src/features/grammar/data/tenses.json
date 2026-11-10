@@ -1,0 +1,53 @@
+[
+  {
+    "id": "present-simple",
+    "title": "Present Simple",
+    "rule": "Обычные действия, расписания, факты и привычки. У he/she/it в утверждении глагола добавляется -s/-es. Вопросы и отрицания — через do/does.",
+    "examples": [
+      "I work from nine to five. — Я работаю с девяти до пяти.",
+      "She drinks coffee every morning. — Она пьёт кофе каждое утро.",
+      "Do you speak English? — Ты говоришь по-английски?",
+      "The train leaves at 8:15. — Поезд отправляется в 8:15."
+    ]
+  },
+  {
+    "id": "present-continuous",
+    "title": "Present Continuous",
+    "rule": "Действие в момент речи или временный характер ситуации. Форма: am/is/are + V-ing.",
+    "examples": [
+      "I am reading a grammar book now. — Сейчас я читаю учебник грамматики.",
+      "They are staying with friends this week. — На этой неделе они живут у друзей.",
+      "Is it raining outside? — На улице идёт дождь?"
+    ]
+  },
+  {
+    "id": "past-simple",
+    "title": "Past Simple",
+    "rule": "Завершённое действие в прошлом с указанием или без указания времени. Правильные глаголы: -ed; неправильные — вторая форма (V2).",
+    "examples": [
+      "We visited London last year. — Мы посетили Лондон в прошлом году.",
+      "He didn't call me yesterday. — Он не звонил мне вчера.",
+      "Did you finish the exercise? — Ты закончил упражнение?"
+    ]
+  },
+  {
+    "id": "present-perfect",
+    "title": "Present Perfect",
+    "rule": "Связь прошлого с настоящим: опыт, результат к текущему моменту, незавершённый период (today, this week). Форма: have/has + V3.",
+    "examples": [
+      "I have already eaten. — Я уже поел.",
+      "She has lived here since 2020. — Она живёт здесь с 2020 года.",
+      "Have you ever tried sushi? — Ты когда-нибудь пробовал суши?"
+    ]
+  },
+  {
+    "id": "future-simple",
+    "title": "Future Simple (will)",
+    "rule": "Спонтанное решение, обещание, предсказание без плана. Форма: will + V (без to).",
+    "examples": [
+      "I will help you with homework. — Я помогу тебе с домашкой.",
+      "It will probably rain tomorrow. — Завтра, вероятно, пойдёт дождь.",
+      "Don't worry — everything will be fine. — Не волнуйся — всё будет хорошо."
+    ]
+  }
+]

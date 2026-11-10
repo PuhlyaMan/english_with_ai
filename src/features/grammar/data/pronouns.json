@@ -1,0 +1,52 @@
+[
+  {
+    "id": "personal-subject",
+    "title": "Личные местоимения (подлежащее)",
+    "rule": "Подлежащее в предложении: I, you, he, she, it, we, they. После глагола to be и в кратких ответах используются те же формы.",
+    "examples": [
+      "They are students. — Они студенты.",
+      "It is cold today. — Сегодня холодно.",
+      "Who called? — I did. — Кто звонил? — Я."
+    ]
+  },
+  {
+    "id": "personal-object",
+    "title": "Личные местоимения (дополнение)",
+    "rule": "Объект действия: me, you, him, her, it, us, them. Следует после глагола или предлога.",
+    "examples": [
+      "She helped me. — Она помогла мне.",
+      "Give them the keys. — Дай им ключи.",
+      "This is between you and me. — Это между тобой и мной."
+    ]
+  },
+  {
+    "id": "possessive-adjectives",
+    "title": "Притяжательные прилагательные",
+    "rule": "Перед существительным: my, your, his, her, its, our, their. Не ставят артикль перед ними.",
+    "examples": [
+      "Her name is Kate. — Её зовут Кейт.",
+      "Our teacher is strict. — Наш учитель строгий.",
+      "The dog wagged its tail. — Собака виляла хвостом."
+    ]
+  },
+  {
+    "id": "possessive-pronouns",
+    "title": "Притяжательные местоимения",
+    "rule": "Заменяют существительное: mine, yours, his, hers, ours, theirs. Самостоятельно, без существительного после.",
+    "examples": [
+      "This book is mine. — Эта книга моя.",
+      "Is this pen yours? — Эта ручка твоя?",
+      "The choice is theirs. — Выбор за ними."
+    ]
+  },
+  {
+    "id": "reflexive",
+    "title": "Возвратные местоимения",
+    "rule": "Действие направлено на субъект: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+    "examples": [
+      "He taught himself guitar. — Он сам научился играть на гитаре.",
+      "We enjoyed ourselves at the party. — Мы хорошо провели время на вечеринке.",
+      "She looked at herself in the mirror. — Она посмотрела на себя в зеркало."
+    ]
+  }
+]

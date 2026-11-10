@@ -40,5 +40,6 @@ describe("TabBar", () => {
     expect(screen.getByRole("link", { name: "Word search" })).toHaveAttribute("aria-current", "page");
     expect(screen.getByRole("link", { name: "Home" })).toHaveAttribute("href", "/");
     expect(screen.getByRole("link", { name: "Word search" })).toHaveAttribute("href", "/word-search");
+    expect(screen.getByRole("link", { name: "Grammar" })).toHaveAttribute("href", "/grammar");
   });
 });

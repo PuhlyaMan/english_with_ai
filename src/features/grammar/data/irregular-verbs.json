@@ -1,0 +1,1507 @@
+[
+  {
+    "id": "abide",
+    "base": "abide",
+    "past": "abode (abided)",
+    "pastParticiple": "abode (abided)",
+    "translation": "пребывать, терпеть, соблюдать"
+  },
+  {
+    "id": "arise",
+    "base": "arise",
+    "past": "arose",
+    "pastParticiple": "arisen",
+    "translation": "возникать, подниматься"
+  },
+  {
+    "id": "awake",
+    "base": "awake",
+    "past": "awoke",
+    "pastParticiple": "awoken (awaked)",
+    "translation": "будить, просыпаться"
+  },
+  {
+    "id": "be",
+    "base": "be",
+    "past": "was / were",
+    "pastParticiple": "been",
+    "translation": "быть"
+  },
+  {
+    "id": "bear",
+    "base": "bear",
+    "past": "bore",
+    "pastParticiple": "born / borne",
+    "translation": "нести, рожать"
+  },
+  {
+    "id": "beat",
+    "base": "beat",
+    "past": "beat",
+    "pastParticiple": "beaten",
+    "translation": "бить"
+  },
+  {
+    "id": "become",
+    "base": "become",
+    "past": "became",
+    "pastParticiple": "become",
+    "translation": "становиться"
+  },
+  {
+    "id": "befall",
+    "base": "befall",
+    "past": "befell",
+    "pastParticiple": "befallen",
+    "translation": "случаться"
+  },
+  {
+    "id": "beget",
+    "base": "beget",
+    "past": "begot (begat)",
+    "pastParticiple": "begotten",
+    "translation": "порождать"
+  },
+  {
+    "id": "begin",
+    "base": "begin",
+    "past": "began",
+    "pastParticiple": "begun",
+    "translation": "начинать"
+  },
+  {
+    "id": "behold",
+    "base": "behold",
+    "past": "beheld",
+    "pastParticiple": "beheld",
+    "translation": "вглядываться, замечать"
+  },
+  {
+    "id": "bend",
+    "base": "bend",
+    "past": "bent",
+    "pastParticiple": "bent",
+    "translation": "гнуть(ся)"
+  },
+  {
+    "id": "bereave",
+    "base": "bereave",
+    "past": "bereft (bereaved)",
+    "pastParticiple": "bereft (bereaved)",
+    "translation": "лишать"
+  },
+  {
+    "id": "beseech",
+    "base": "beseech",
+    "past": "besought (beseeched)",
+    "pastParticiple": "besought (beseeched)",
+    "translation": "умолять, упрашивать"
+  },
+  {
+    "id": "beset",
+    "base": "beset",
+    "past": "beset",
+    "pastParticiple": "beset",
+    "translation": "осаждать, окружать"
+  },
+  {
+    "id": "bet",
+    "base": "bet",
+    "past": "bet (betted)",
+    "pastParticiple": "bet (betted)",
+    "translation": "держать пари"
+  },
+  {
+    "id": "bid",
+    "base": "bid",
+    "past": "bade (bid)",
+    "pastParticiple": "bidden (bid)",
+    "translation": "предлагать цену, велеть"
+  },
+  {
+    "id": "bind",
+    "base": "bind",
+    "past": "bound",
+    "pastParticiple": "bound",
+    "translation": "связывать"
+  },
+  {
+    "id": "bite",
+    "base": "bite",
+    "past": "bit",
+    "pastParticiple": "bitten",
+    "translation": "кусать(ся)"
+  },
+  {
+    "id": "bleed",
+    "base": "bleed",
+    "past": "bled",
+    "pastParticiple": "bled",
+    "translation": "кровоточить"
+  },
+  {
+    "id": "blow",
+    "base": "blow",
+    "past": "blew",
+    "pastParticiple": "blown",
+    "translation": "дуть"
+  },
+  {
+    "id": "break",
+    "base": "break",
+    "past": "broke",
+    "pastParticiple": "broken",
+    "translation": "ломать"
+  },
+  {
+    "id": "breed",
+    "base": "breed",
+    "past": "bred",
+    "pastParticiple": "bred",
+    "translation": "размножаться, выращивать"
+  },
+  {
+    "id": "bring",
+    "base": "bring",
+    "past": "brought",
+    "pastParticiple": "brought",
+    "translation": "приносить"
+  },
+  {
+    "id": "broadcast",
+    "base": "broadcast",
+    "past": "broadcast",
+    "pastParticiple": "broadcast",
+    "translation": "распространять, вещать"
+  },
+  {
+    "id": "build",
+    "base": "build",
+    "past": "built",
+    "pastParticiple": "built",
+    "translation": "строить"
+  },
+  {
+    "id": "burn",
+    "base": "burn",
+    "past": "burnt (burned)",
+    "pastParticiple": "burnt (burned)",
+    "translation": "гореть, жечь"
+  },
+  {
+    "id": "burst",
+    "base": "burst",
+    "past": "burst",
+    "pastParticiple": "burst",
+    "translation": "взрываться"
+  },
+  {
+    "id": "buy",
+    "base": "buy",
+    "past": "bought",
+    "pastParticiple": "bought",
+    "translation": "покупать"
+  },
+  {
+    "id": "can",
+    "base": "can",
+    "past": "could",
+    "pastParticiple": "— / been able",
+    "translation": "мочь, уметь"
+  },
+  {
+    "id": "cast",
+    "base": "cast",
+    "past": "cast",
+    "pastParticiple": "cast",
+    "translation": "кинуть, лить металл"
+  },
+  {
+    "id": "catch",
+    "base": "catch",
+    "past": "caught",
+    "pastParticiple": "caught",
+    "translation": "ловить"
+  },
+  {
+    "id": "choose",
+    "base": "choose",
+    "past": "chose",
+    "pastParticiple": "chosen",
+    "translation": "выбирать"
+  },
+  {
+    "id": "cleave",
+    "base": "cleave",
+    "past": "clove (cleft, cleaved)",
+    "pastParticiple": "cloven (cleft, cleaved)",
+    "translation": "рассекать"
+  },
+  {
+    "id": "cling",
+    "base": "cling",
+    "past": "clung",
+    "pastParticiple": "clung",
+    "translation": "цепляться"
+  },
+  {
+    "id": "clothe",
+    "base": "clothe",
+    "past": "clothed (clad)",
+    "pastParticiple": "clothed (clad)",
+    "translation": "одевать"
+  },
+  {
+    "id": "come",
+    "base": "come",
+    "past": "came",
+    "pastParticiple": "come",
+    "translation": "приходить"
+  },
+  {
+    "id": "cost",
+    "base": "cost",
+    "past": "cost",
+    "pastParticiple": "cost",
+    "translation": "стоить"
+  },
+  {
+    "id": "creep",
+    "base": "creep",
+    "past": "crept",
+    "pastParticiple": "crept",
+    "translation": "ползти"
+  },
+  {
+    "id": "cut",
+    "base": "cut",
+    "past": "cut",
+    "pastParticiple": "cut",
+    "translation": "резать"
+  },
+  {
+    "id": "dare",
+    "base": "dare",
+    "past": "durst (dared)",
+    "pastParticiple": "dared",
+    "translation": "сметь"
+  },
+  {
+    "id": "deal",
+    "base": "deal",
+    "past": "dealt",
+    "pastParticiple": "dealt",
+    "translation": "иметь дело"
+  },
+  {
+    "id": "dig",
+    "base": "dig",
+    "past": "dug",
+    "pastParticiple": "dug",
+    "translation": "копать"
+  },
+  {
+    "id": "dive",
+    "base": "dive",
+    "past": "dived (dove)",
+    "pastParticiple": "dived",
+    "translation": "нырять"
+  },
+  {
+    "id": "do",
+    "base": "do",
+    "past": "did",
+    "pastParticiple": "done",
+    "translation": "делать"
+  },
+  {
+    "id": "draw",
+    "base": "draw",
+    "past": "drew",
+    "pastParticiple": "drawn",
+    "translation": "тащить, рисовать"
+  },
+  {
+    "id": "dream",
+    "base": "dream",
+    "past": "dreamt (dreamed)",
+    "pastParticiple": "dreamt (dreamed)",
+    "translation": "грезить, мечтать"
+  },
+  {
+    "id": "drink",
+    "base": "drink",
+    "past": "drank",
+    "pastParticiple": "drunk",
+    "translation": "пить"
+  },
+  {
+    "id": "drive",
+    "base": "drive",
+    "past": "drove",
+    "pastParticiple": "driven",
+    "translation": "гнать, ехать"
+  },
+  {
+    "id": "dwell",
+    "base": "dwell",
+    "past": "dwelt",
+    "pastParticiple": "dwelt",
+    "translation": "обитать, задерживаться"
+  },
+  {
+    "id": "eat",
+    "base": "eat",
+    "past": "ate",
+    "pastParticiple": "eaten",
+    "translation": "кушать, есть"
+  },
+  {
+    "id": "fall",
+    "base": "fall",
+    "past": "fell",
+    "pastParticiple": "fallen",
+    "translation": "падать"
+  },
+  {
+    "id": "feed",
+    "base": "feed",
+    "past": "fed",
+    "pastParticiple": "fed",
+    "translation": "кормить"
+  },
+  {
+    "id": "feel",
+    "base": "feel",
+    "past": "felt",
+    "pastParticiple": "felt",
+    "translation": "чувствовать"
+  },
+  {
+    "id": "fight",
+    "base": "fight",
+    "past": "fought",
+    "pastParticiple": "fought",
+    "translation": "сражаться"
+  },
+  {
+    "id": "find",
+    "base": "find",
+    "past": "found",
+    "pastParticiple": "found",
+    "translation": "находить"
+  },
+  {
+    "id": "flee",
+    "base": "flee",
+    "past": "fled",
+    "pastParticiple": "fled",
+    "translation": "бежать, спасаться"
+  },
+  {
+    "id": "fling",
+    "base": "fling",
+    "past": "flung",
+    "pastParticiple": "flung",
+    "translation": "бросить"
+  },
+  {
+    "id": "fly",
+    "base": "fly",
+    "past": "flew",
+    "pastParticiple": "flown",
+    "translation": "летать"
+  },
+  {
+    "id": "forbid",
+    "base": "forbid",
+    "past": "forbad (forbade)",
+    "pastParticiple": "forbidden",
+    "translation": "запретить"
+  },
+  {
+    "id": "forecast",
+    "base": "forecast",
+    "past": "forecast (forecasted)",
+    "pastParticiple": "forecast (forecasted)",
+    "translation": "предсказывать"
+  },
+  {
+    "id": "foresee",
+    "base": "foresee",
+    "past": "foresaw",
+    "pastParticiple": "foreseen",
+    "translation": "предвидеть"
+  },
+  {
+    "id": "foretell",
+    "base": "foretell",
+    "past": "foretold",
+    "pastParticiple": "foretold",
+    "translation": "предсказывать"
+  },
+  {
+    "id": "forget",
+    "base": "forget",
+    "past": "forgot",
+    "pastParticiple": "forgotten",
+    "translation": "забыть"
+  },
+  {
+    "id": "forgive",
+    "base": "forgive",
+    "past": "forgave",
+    "pastParticiple": "forgiven",
+    "translation": "простить"
+  },
+  {
+    "id": "forsake",
+    "base": "forsake",
+    "past": "forsook",
+    "pastParticiple": "forsaken",
+    "translation": "покидать"
+  },
+  {
+    "id": "freeze",
+    "base": "freeze",
+    "past": "froze",
+    "pastParticiple": "frozen",
+    "translation": "замерзнуть, замораживать"
+  },
+  {
+    "id": "get",
+    "base": "get",
+    "past": "got",
+    "pastParticiple": "got (gotten)",
+    "translation": "получать"
+  },
+  {
+    "id": "give",
+    "base": "give",
+    "past": "gave",
+    "pastParticiple": "given",
+    "translation": "давать"
+  },
+  {
+    "id": "go",
+    "base": "go",
+    "past": "went",
+    "pastParticiple": "gone",
+    "translation": "идти, уходить"
+  },
+  {
+    "id": "grind",
+    "base": "grind",
+    "past": "ground",
+    "pastParticiple": "ground",
+    "translation": "точить, молоть"
+  },
+  {
+    "id": "grow",
+    "base": "grow",
+    "past": "grew",
+    "pastParticiple": "grown",
+    "translation": "расти"
+  },
+  {
+    "id": "hang",
+    "base": "hang",
+    "past": "hung (hanged)",
+    "pastParticiple": "hung (hanged)",
+    "translation": "висеть, повесить"
+  },
+  {
+    "id": "have",
+    "base": "have",
+    "past": "had",
+    "pastParticiple": "had",
+    "translation": "иметь"
+  },
+  {
+    "id": "hear",
+    "base": "hear",
+    "past": "heard",
+    "pastParticiple": "heard",
+    "translation": "слышать"
+  },
+  {
+    "id": "heave",
+    "base": "heave",
+    "past": "heaved (hove)",
+    "pastParticiple": "heaved (hove)",
+    "translation": "поднимать(ся)"
+  },
+  {
+    "id": "hew",
+    "base": "hew",
+    "past": "hewed",
+    "pastParticiple": "hewed (hewn)",
+    "translation": "рубить, тесать"
+  },
+  {
+    "id": "hide",
+    "base": "hide",
+    "past": "hid",
+    "pastParticiple": "hidden",
+    "translation": "прятать(ся)"
+  },
+  {
+    "id": "hit",
+    "base": "hit",
+    "past": "hit",
+    "pastParticiple": "hit",
+    "translation": "ударять, попадать"
+  },
+  {
+    "id": "hold",
+    "base": "hold",
+    "past": "held",
+    "pastParticiple": "held",
+    "translation": "держать"
+  },
+  {
+    "id": "hurt",
+    "base": "hurt",
+    "past": "hurt",
+    "pastParticiple": "hurt",
+    "translation": "причинять боль"
+  },
+  {
+    "id": "keep",
+    "base": "keep",
+    "past": "kept",
+    "pastParticiple": "kept",
+    "translation": "хранить"
+  },
+  {
+    "id": "kneel",
+    "base": "kneel",
+    "past": "knelt (kneeled)",
+    "pastParticiple": "knelt (kneeled)",
+    "translation": "становиться на колени"
+  },
+  {
+    "id": "knit",
+    "base": "knit",
+    "past": "knit (knitted)",
+    "pastParticiple": "knit (knitted)",
+    "translation": "вязать"
+  },
+  {
+    "id": "know",
+    "base": "know",
+    "past": "knew",
+    "pastParticiple": "known",
+    "translation": "знать"
+  },
+  {
+    "id": "lay",
+    "base": "lay",
+    "past": "laid",
+    "pastParticiple": "laid",
+    "translation": "класть, положить"
+  },
+  {
+    "id": "lead",
+    "base": "lead",
+    "past": "led",
+    "pastParticiple": "led",
+    "translation": "вести"
+  },
+  {
+    "id": "lean",
+    "base": "lean",
+    "past": "leant (leaned)",
+    "pastParticiple": "leant (leaned)",
+    "translation": "опереться, прислониться"
+  },
+  {
+    "id": "leap",
+    "base": "leap",
+    "past": "leapt (leaped)",
+    "pastParticiple": "leapt (leaped)",
+    "translation": "прыгать"
+  },
+  {
+    "id": "learn",
+    "base": "learn",
+    "past": "learnt (learned)",
+    "pastParticiple": "learnt (learned)",
+    "translation": "учить(ся)"
+  },
+  {
+    "id": "leave",
+    "base": "leave",
+    "past": "left",
+    "pastParticiple": "left",
+    "translation": "оставить, покидать"
+  },
+  {
+    "id": "lend",
+    "base": "lend",
+    "past": "lent",
+    "pastParticiple": "lent",
+    "translation": "одалживать"
+  },
+  {
+    "id": "let",
+    "base": "let",
+    "past": "let",
+    "pastParticiple": "let",
+    "translation": "пустить, позволять"
+  },
+  {
+    "id": "lie",
+    "base": "lie",
+    "past": "lay",
+    "pastParticiple": "lain",
+    "translation": "лежать"
+  },
+  {
+    "id": "light",
+    "base": "light",
+    "past": "lit (lighted)",
+    "pastParticiple": "lit (lighted)",
+    "translation": "освещать, зажигать"
+  },
+  {
+    "id": "lose",
+    "base": "lose",
+    "past": "lost",
+    "pastParticiple": "lost",
+    "translation": "терять"
+  },
+  {
+    "id": "make",
+    "base": "make",
+    "past": "made",
+    "pastParticiple": "made",
+    "translation": "делать"
+  },
+  {
+    "id": "may",
+    "base": "may",
+    "past": "might",
+    "pastParticiple": "might",
+    "translation": "мочь, иметь возможность"
+  },
+  {
+    "id": "mean",
+    "base": "mean",
+    "past": "meant",
+    "pastParticiple": "meant",
+    "translation": "подразумевать, значить"
+  },
+  {
+    "id": "meet",
+    "base": "meet",
+    "past": "met",
+    "pastParticiple": "met",
+    "translation": "встречать"
+  },
+  {
+    "id": "mishear",
+    "base": "mishear",
+    "past": "misheard",
+    "pastParticiple": "misheard",
+    "translation": "ослышаться"
+  },
+  {
+    "id": "mislay",
+    "base": "mislay",
+    "past": "mislaid",
+    "pastParticiple": "mislaid",
+    "translation": "класть не на место"
+  },
+  {
+    "id": "mislead",
+    "base": "mislead",
+    "past": "misled",
+    "pastParticiple": "misled",
+    "translation": "ввести в заблуждение"
+  },
+  {
+    "id": "misread",
+    "base": "misread",
+    "past": "misread",
+    "pastParticiple": "misread",
+    "translation": "неправильно истолковывать"
+  },
+  {
+    "id": "misspell",
+    "base": "misspell",
+    "past": "misspelt (misspeled)",
+    "pastParticiple": "misspelt (misspeled)",
+    "translation": "писать с ошибками"
+  },
+  {
+    "id": "mistake",
+    "base": "mistake",
+    "past": "mistook",
+    "pastParticiple": "mistaken",
+    "translation": "ошибаться"
+  },
+  {
+    "id": "misunderstand",
+    "base": "misunderstand",
+    "past": "misunderstood",
+    "pastParticiple": "misunderstood",
+    "translation": "неправильно понимать"
+  },
+  {
+    "id": "mow",
+    "base": "mow",
+    "past": "mowed",
+    "pastParticiple": "mown (mowed)",
+    "translation": "косить"
+  },
+  {
+    "id": "overcome",
+    "base": "overcome",
+    "past": "overcame",
+    "pastParticiple": "overcome",
+    "translation": "преодолевать"
+  },
+  {
+    "id": "overdo",
+    "base": "overdo",
+    "past": "overdid",
+    "pastParticiple": "overdone",
+    "translation": "переусердствовать"
+  },
+  {
+    "id": "overeat",
+    "base": "overeat",
+    "past": "overate",
+    "pastParticiple": "overeaten",
+    "translation": "объедаться"
+  },
+  {
+    "id": "overhear",
+    "base": "overhear",
+    "past": "overheard",
+    "pastParticiple": "overheard",
+    "translation": "подслушивать"
+  },
+  {
+    "id": "overpay",
+    "base": "overpay",
+    "past": "overpaid",
+    "pastParticiple": "overpaid",
+    "translation": "переплачивать"
+  },
+  {
+    "id": "override",
+    "base": "override",
+    "past": "overrode",
+    "pastParticiple": "overridden",
+    "translation": "отвергать, отклонять"
+  },
+  {
+    "id": "oversleep",
+    "base": "oversleep",
+    "past": "overslept",
+    "pastParticiple": "overslept",
+    "translation": "проспать"
+  },
+  {
+    "id": "overtake",
+    "base": "overtake",
+    "past": "overtook",
+    "pastParticiple": "overtaken",
+    "translation": "догонять"
+  },
+  {
+    "id": "overthrow",
+    "base": "overthrow",
+    "past": "overthrew",
+    "pastParticiple": "overthrown",
+    "translation": "свергать"
+  },
+  {
+    "id": "pay",
+    "base": "pay",
+    "past": "paid",
+    "pastParticiple": "paid",
+    "translation": "платить"
+  },
+  {
+    "id": "plead",
+    "base": "plead",
+    "past": "pleaded (pled)",
+    "pastParticiple": "pleaded (pled)",
+    "translation": "обращаться к суду"
+  },
+  {
+    "id": "prepay",
+    "base": "prepay",
+    "past": "prepaid",
+    "pastParticiple": "prepaid",
+    "translation": "платить вперед"
+  },
+  {
+    "id": "prove",
+    "base": "prove",
+    "past": "proved",
+    "pastParticiple": "proved (proven)",
+    "translation": "доказывать"
+  },
+  {
+    "id": "put",
+    "base": "put",
+    "past": "put",
+    "pastParticiple": "put",
+    "translation": "класть"
+  },
+  {
+    "id": "quit",
+    "base": "quit",
+    "past": "quit (quitted)",
+    "pastParticiple": "quit (quitted)",
+    "translation": "покидать, прекращать"
+  },
+  {
+    "id": "read",
+    "base": "read",
+    "past": "read (red)",
+    "pastParticiple": "read (red)",
+    "translation": "читать"
+  },
+  {
+    "id": "rebuild",
+    "base": "rebuild",
+    "past": "rebuilt",
+    "pastParticiple": "rebuilt",
+    "translation": "перестроить"
+  },
+  {
+    "id": "redo",
+    "base": "redo",
+    "past": "redid",
+    "pastParticiple": "redone",
+    "translation": "повторять сделанное"
+  },
+  {
+    "id": "remake",
+    "base": "remake",
+    "past": "remade",
+    "pastParticiple": "remade",
+    "translation": "переделывать"
+  },
+  {
+    "id": "rend",
+    "base": "rend",
+    "past": "rent",
+    "pastParticiple": "rent",
+    "translation": "раздирать"
+  },
+  {
+    "id": "repay",
+    "base": "repay",
+    "past": "repaid",
+    "pastParticiple": "repaid",
+    "translation": "отдавать долг"
+  },
+  {
+    "id": "resell",
+    "base": "resell",
+    "past": "resold",
+    "pastParticiple": "resold",
+    "translation": "перепродавать"
+  },
+  {
+    "id": "reset",
+    "base": "reset",
+    "past": "reset",
+    "pastParticiple": "reset",
+    "translation": "возвращать, сбрасывать"
+  },
+  {
+    "id": "retake",
+    "base": "retake",
+    "past": "retook",
+    "pastParticiple": "retaken",
+    "translation": "забирать, пересдавать"
+  },
+  {
+    "id": "retell",
+    "base": "retell",
+    "past": "retold",
+    "pastParticiple": "retold",
+    "translation": "пересказывать"
+  },
+  {
+    "id": "rewrite",
+    "base": "rewrite",
+    "past": "rewrote",
+    "pastParticiple": "rewritten",
+    "translation": "переписывать"
+  },
+  {
+    "id": "rid",
+    "base": "rid",
+    "past": "rid (ridded)",
+    "pastParticiple": "rid (ridded)",
+    "translation": "избавлять"
+  },
+  {
+    "id": "ride",
+    "base": "ride",
+    "past": "rode",
+    "pastParticiple": "ridden",
+    "translation": "ездить верхом"
+  },
+  {
+    "id": "ring",
+    "base": "ring",
+    "past": "rang",
+    "pastParticiple": "rung",
+    "translation": "звонить"
+  },
+  {
+    "id": "rise",
+    "base": "rise",
+    "past": "rose",
+    "pastParticiple": "risen",
+    "translation": "подниматься"
+  },
+  {
+    "id": "run",
+    "base": "run",
+    "past": "ran",
+    "pastParticiple": "run",
+    "translation": "бежать"
+  },
+  {
+    "id": "saw",
+    "base": "saw",
+    "past": "sawed",
+    "pastParticiple": "sawn (sawed)",
+    "translation": "пилить"
+  },
+  {
+    "id": "say",
+    "base": "say",
+    "past": "said",
+    "pastParticiple": "said",
+    "translation": "говорить"
+  },
+  {
+    "id": "see",
+    "base": "see",
+    "past": "saw",
+    "pastParticiple": "seen",
+    "translation": "видеть"
+  },
+  {
+    "id": "seek",
+    "base": "seek",
+    "past": "sought",
+    "pastParticiple": "sought",
+    "translation": "искать"
+  },
+  {
+    "id": "sell",
+    "base": "sell",
+    "past": "sold",
+    "pastParticiple": "sold",
+    "translation": "продавать"
+  },
+  {
+    "id": "send",
+    "base": "send",
+    "past": "sent",
+    "pastParticiple": "sent",
+    "translation": "посылать"
+  },
+  {
+    "id": "set",
+    "base": "set",
+    "past": "set",
+    "pastParticiple": "set",
+    "translation": "устанавливать"
+  },
+  {
+    "id": "sew",
+    "base": "sew",
+    "past": "sewed",
+    "pastParticiple": "sewn (sewed)",
+    "translation": "шить"
+  },
+  {
+    "id": "shake",
+    "base": "shake",
+    "past": "shook",
+    "pastParticiple": "shaken",
+    "translation": "трясти"
+  },
+  {
+    "id": "shear",
+    "base": "shear",
+    "past": "sheared",
+    "pastParticiple": "shorn (sheared)",
+    "translation": "стричь"
+  },
+  {
+    "id": "shed",
+    "base": "shed",
+    "past": "shed",
+    "pastParticiple": "shed",
+    "translation": "проливать, сбрасывать"
+  },
+  {
+    "id": "shine",
+    "base": "shine",
+    "past": "shone (shined)",
+    "pastParticiple": "shone (shined)",
+    "translation": "светить"
+  },
+  {
+    "id": "shoot",
+    "base": "shoot",
+    "past": "shot",
+    "pastParticiple": "shot",
+    "translation": "стрелять"
+  },
+  {
+    "id": "show",
+    "base": "show",
+    "past": "showed",
+    "pastParticiple": "shown (showed)",
+    "translation": "показывать"
+  },
+  {
+    "id": "shrink",
+    "base": "shrink",
+    "past": "shrank (shrunk)",
+    "pastParticiple": "shrunk (shrunken)",
+    "translation": "сжиматься"
+  },
+  {
+    "id": "shut",
+    "base": "shut",
+    "past": "shut",
+    "pastParticiple": "shut",
+    "translation": "закрывать"
+  },
+  {
+    "id": "sing",
+    "base": "sing",
+    "past": "sang",
+    "pastParticiple": "sung",
+    "translation": "петь"
+  },
+  {
+    "id": "sink",
+    "base": "sink",
+    "past": "sank (sunk)",
+    "pastParticiple": "sunk",
+    "translation": "тонуть"
+  },
+  {
+    "id": "sit",
+    "base": "sit",
+    "past": "sat",
+    "pastParticiple": "sat",
+    "translation": "сидеть"
+  },
+  {
+    "id": "slay",
+    "base": "slay",
+    "past": "slew",
+    "pastParticiple": "slain",
+    "translation": "убивать"
+  },
+  {
+    "id": "sleep",
+    "base": "sleep",
+    "past": "slept",
+    "pastParticiple": "slept",
+    "translation": "спать"
+  },
+  {
+    "id": "slide",
+    "base": "slide",
+    "past": "slid",
+    "pastParticiple": "slid (slidden)",
+    "translation": "скользить"
+  },
+  {
+    "id": "sling",
+    "base": "sling",
+    "past": "slung",
+    "pastParticiple": "slung",
+    "translation": "швырять"
+  },
+  {
+    "id": "slink",
+    "base": "slink",
+    "past": "slunk",
+    "pastParticiple": "slunk",
+    "translation": "красться"
+  },
+  {
+    "id": "slit",
+    "base": "slit",
+    "past": "slit",
+    "pastParticiple": "slit",
+    "translation": "разрезать"
+  },
+  {
+    "id": "smell",
+    "base": "smell",
+    "past": "smelt (smelled)",
+    "pastParticiple": "smelt (smelled)",
+    "translation": "пахнуть"
+  },
+  {
+    "id": "sow",
+    "base": "sow",
+    "past": "sowed",
+    "pastParticiple": "sown (sowed)",
+    "translation": "сеять"
+  },
+  {
+    "id": "speak",
+    "base": "speak",
+    "past": "spoke",
+    "pastParticiple": "spoken",
+    "translation": "говорить"
+  },
+  {
+    "id": "speed",
+    "base": "speed",
+    "past": "sped (speeded)",
+    "pastParticiple": "sped (speeded)",
+    "translation": "ускорять"
+  },
+  {
+    "id": "spell",
+    "base": "spell",
+    "past": "spelt (spelled)",
+    "pastParticiple": "spelt (spelled)",
+    "translation": "писать по буквам"
+  },
+  {
+    "id": "spend",
+    "base": "spend",
+    "past": "spent",
+    "pastParticiple": "spent",
+    "translation": "тратить"
+  },
+  {
+    "id": "spill",
+    "base": "spill",
+    "past": "spilt (spilled)",
+    "pastParticiple": "spilt (spilled)",
+    "translation": "разливать"
+  },
+  {
+    "id": "spin",
+    "base": "spin",
+    "past": "spun (span)",
+    "pastParticiple": "spun",
+    "translation": "прясть, вращать"
+  },
+  {
+    "id": "spit",
+    "base": "spit",
+    "past": "spat (spit)",
+    "pastParticiple": "spat (spit)",
+    "translation": "плевать"
+  },
+  {
+    "id": "split",
+    "base": "split",
+    "past": "split",
+    "pastParticiple": "split",
+    "translation": "раскалывать"
+  },
+  {
+    "id": "spoil",
+    "base": "spoil",
+    "past": "spoilt (spoiled)",
+    "pastParticiple": "spoilt (spoiled)",
+    "translation": "портить"
+  },
+  {
+    "id": "spread",
+    "base": "spread",
+    "past": "spread",
+    "pastParticiple": "spread",
+    "translation": "распространять"
+  },
+  {
+    "id": "spring",
+    "base": "spring",
+    "past": "sprang (sprung)",
+    "pastParticiple": "sprung",
+    "translation": "прыгать"
+  },
+  {
+    "id": "stand",
+    "base": "stand",
+    "past": "stood",
+    "pastParticiple": "stood",
+    "translation": "стоять"
+  },
+  {
+    "id": "steal",
+    "base": "steal",
+    "past": "stole",
+    "pastParticiple": "stolen",
+    "translation": "красть"
+  },
+  {
+    "id": "stick",
+    "base": "stick",
+    "past": "stuck",
+    "pastParticiple": "stuck",
+    "translation": "прилипать"
+  },
+  {
+    "id": "sting",
+    "base": "sting",
+    "past": "stung",
+    "pastParticiple": "stung",
+    "translation": "жалить"
+  },
+  {
+    "id": "stink",
+    "base": "stink",
+    "past": "stank (stunk)",
+    "pastParticiple": "stunk",
+    "translation": "вонять"
+  },
+  {
+    "id": "strew",
+    "base": "strew",
+    "past": "strewed",
+    "pastParticiple": "strewn (strewed)",
+    "translation": "усыпать"
+  },
+  {
+    "id": "stride",
+    "base": "stride",
+    "past": "strode",
+    "pastParticiple": "stridden",
+    "translation": "шагать"
+  },
+  {
+    "id": "strike",
+    "base": "strike",
+    "past": "struck",
+    "pastParticiple": "struck (stricken)",
+    "translation": "ударять"
+  },
+  {
+    "id": "string",
+    "base": "string",
+    "past": "strung",
+    "pastParticiple": "strung",
+    "translation": "нанизывать"
+  },
+  {
+    "id": "strive",
+    "base": "strive",
+    "past": "strove (strived)",
+    "pastParticiple": "striven (strived)",
+    "translation": "стремиться"
+  },
+  {
+    "id": "swear",
+    "base": "swear",
+    "past": "swore",
+    "pastParticiple": "sworn",
+    "translation": "клясться"
+  },
+  {
+    "id": "sweep",
+    "base": "sweep",
+    "past": "swept",
+    "pastParticiple": "swept",
+    "translation": "мести"
+  },
+  {
+    "id": "swell",
+    "base": "swell",
+    "past": "swelled",
+    "pastParticiple": "swollen (swelled)",
+    "translation": "опухать"
+  },
+  {
+    "id": "swim",
+    "base": "swim",
+    "past": "swam",
+    "pastParticiple": "swum",
+    "translation": "плавать"
+  },
+  {
+    "id": "swing",
+    "base": "swing",
+    "past": "swung",
+    "pastParticiple": "swung",
+    "translation": "качать(ся)"
+  },
+  {
+    "id": "take",
+    "base": "take",
+    "past": "took",
+    "pastParticiple": "taken",
+    "translation": "брать"
+  },
+  {
+    "id": "teach",
+    "base": "teach",
+    "past": "taught",
+    "pastParticiple": "taught",
+    "translation": "учить, преподавать"
+  },
+  {
+    "id": "tear",
+    "base": "tear",
+    "past": "tore",
+    "pastParticiple": "torn",
+    "translation": "рвать"
+  },
+  {
+    "id": "tell",
+    "base": "tell",
+    "past": "told",
+    "pastParticiple": "told",
+    "translation": "рассказывать"
+  },
+  {
+    "id": "think",
+    "base": "think",
+    "past": "thought",
+    "pastParticiple": "thought",
+    "translation": "думать"
+  },
+  {
+    "id": "throw",
+    "base": "throw",
+    "past": "threw",
+    "pastParticiple": "thrown",
+    "translation": "бросать"
+  },
+  {
+    "id": "thrust",
+    "base": "thrust",
+    "past": "thrust",
+    "pastParticiple": "thrust",
+    "translation": "толкать"
+  },
+  {
+    "id": "tread",
+    "base": "tread",
+    "past": "trod",
+    "pastParticiple": "trodden (trod)",
+    "translation": "ступать"
+  },
+  {
+    "id": "undergo",
+    "base": "undergo",
+    "past": "underwent",
+    "pastParticiple": "undergone",
+    "translation": "претерпевать"
+  },
+  {
+    "id": "understand",
+    "base": "understand",
+    "past": "understood",
+    "pastParticiple": "understood",
+    "translation": "понимать"
+  },
+  {
+    "id": "undertake",
+    "base": "undertake",
+    "past": "undertook",
+    "pastParticiple": "undertaken",
+    "translation": "предпринимать"
+  },
+  {
+    "id": "upset",
+    "base": "upset",
+    "past": "upset",
+    "pastParticiple": "upset",
+    "translation": "расстраивать"
+  },
+  {
+    "id": "wake",
+    "base": "wake",
+    "past": "woke (waked)",
+    "pastParticiple": "woken (waked)",
+    "translation": "будить, просыпаться"
+  },
+  {
+    "id": "wear",
+    "base": "wear",
+    "past": "wore",
+    "pastParticiple": "worn",
+    "translation": "носить (одежду)"
+  },
+  {
+    "id": "weave",
+    "base": "weave",
+    "past": "wove (weaved)",
+    "pastParticiple": "woven (weaved)",
+    "translation": "плести"
+  },
+  {
+    "id": "weep",
+    "base": "weep",
+    "past": "wept",
+    "pastParticiple": "wept",
+    "translation": "плакать"
+  },
+  {
+    "id": "win",
+    "base": "win",
+    "past": "won",
+    "pastParticiple": "won",
+    "translation": "побеждать"
+  },
+  {
+    "id": "wind",
+    "base": "wind",
+    "past": "wound",
+    "pastParticiple": "wound",
+    "translation": "виться, наматывать"
+  },
+  {
+    "id": "withdraw",
+    "base": "withdraw",
+    "past": "withdrew",
+    "pastParticiple": "withdrawn",
+    "translation": "отводить, изымать"
+  },
+  {
+    "id": "withhold",
+    "base": "withhold",
+    "past": "withheld",
+    "pastParticiple": "withheld",
+    "translation": "утаивать"
+  },
+  {
+    "id": "withstand",
+    "base": "withstand",
+    "past": "withstood",
+    "pastParticiple": "withstood",
+    "translation": "противостоять"
+  },
+  {
+    "id": "wring",
+    "base": "wring",
+    "past": "wrung",
+    "pastParticiple": "wrung",
+    "translation": "выкручивать"
+  },
+  {
+    "id": "write",
+    "base": "write",
+    "past": "wrote",
+    "pastParticiple": "written",
+    "translation": "писать"
+  }
+]

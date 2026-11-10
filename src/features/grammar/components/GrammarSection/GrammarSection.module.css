@@ -1,0 +1,132 @@
+.section {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.heading {
+  margin: 0;
+}
+
+.sectionDisclosure {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.sectionDisclosure:hover {
+  filter: brightness(0.98);
+}
+
+.sectionDisclosure:focus-visible {
+  outline: 2px solid rgb(29 78 216 / 45%);
+  outline-offset: 2px;
+}
+
+.sectionPanel {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0 0.15rem 0.25rem;
+}
+
+.ruleList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.ruleCard {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.ruleHeading {
+  margin: 0;
+}
+
+.disclosureButton {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.disclosureButton:hover {
+  background: rgb(29 78 216 / 4%);
+}
+
+.disclosureButton:focus-visible {
+  outline: 2px solid rgb(29 78 216 / 45%);
+  outline-offset: -2px;
+}
+
+.chevron {
+  flex: 0 0 auto;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 2px solid currentcolor;
+  border-bottom: 2px solid currentcolor;
+  transform: rotate(-45deg);
+  transition: transform 0.15s ease;
+}
+
+.chevron[data-open="true"] {
+  transform: rotate(45deg);
+}
+
+.rulePanel {
+  padding: 0 1rem 1rem;
+}
+
+.ruleText {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.exampleList {
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.exampleItem {
+  margin: 0;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.5rem;
+  background: rgb(29 78 216 / 6%);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
