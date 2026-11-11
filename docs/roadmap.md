@@ -1,61 +1,61 @@
 # EasyEnglish — Roadmap
 
-## Статус модулей
+## Module status
 
-### Реализовано
-1. Поиск слова — базовая версия страницы: инпут, кнопка поиска, отображение определений, фонетики и аудио через Dictionary API.
+### Shipped
+1. Word search — basic page: input, search button, definitions, phonetics, and audio via the Dictionary API.
 
-### В процессе
-(пока пусто — сюда переносится модуль, когда начнётся активная разработка)
+### In progress
+3. Personal vocabulary — saving words, integration with search (Stage 1): from the word card into a personal list; page listing saved words.
 
-### Планируется
-2. Шпаргалки — справочник правил (времена, предлоги, местоимения). Будет дополняться.
-3. Личный словарь — сохранение слов. Планируется объединить с поиском слова.
-4. Переводчик — EN↔RU (Этап 2.5).
-5. Тренировка слов (SRS) — карточки с интервальным повторением на основе личного словаря.
-6. Аудирование и проговаривание — dictation и shadowing на базе аудио из Dictionary API.
-7. Упражнения по грамматике — интерактивные задания на основе тем из шпаргалок.
-8. Дашборд прогресса — статистика: выучено слов, серия дней, точность ответов.
-9. Геймификация — XP, уровни, достижения.
-10. Импорт/экспорт словаря — CSV/JSON для бэкапа и переноса.
-11. Слово дня — ежедневная подборка на главной странице.
+### Planned
+2. Cheat sheets — grammar reference (tenses, prepositions, pronouns). Will be expanded over time.
+4. Translator — EN↔RU (Stage 2.5).
+5. Word training (SRS) — spaced-repetition flashcards based on the personal vocabulary.
+6. Listening and speaking — dictation and shadowing using audio from the Dictionary API.
+7. Grammar exercises — interactive drills based on cheat sheet topics.
+8. Progress dashboard — stats: words learned, day streak, answer accuracy.
+9. Gamification — XP, levels, achievements.
+10. Vocabulary import/export — CSV/JSON for backup and migration.
+11. Word of the day — daily pick on the home page.
 
-## Этапы
+## Stages
 
-### Этап 0 — Готово
-Базовая страница поиска слова (features/word-search) работает: запрос к Dictionary API, отображение результата, обработка ошибок.
+### Stage 0 — Done
+Basic word search page (`features/word-search`) works: Dictionary API request, result display, error handling.
 
-### Этап 1 — Связка поиска и словаря
-Объединить поиск слова с личным словарём: из карточки слова можно сохранить его в личный список. Добавить страницу личного словаря со списком сохранённых слов.
+### Stage 1 — In progress: search + vocabulary
+Connect word search with the personal vocabulary: save a word from its card into the personal list. Add a personal vocabulary page with the list of saved words.
 
-### Этап 2 — Шпаргалки
-Добавить модуль шпаргалок (статичный справочник: времена, предлоги, местоимения).
-- Перспективная интеграция с English Constructicon API (https://englishconstructicon.bham.ac.uk/database/api): эндпоинты GET /constructions и GET /constructions/{id}/, без аутентификации, возвращают JSON с конструкциями английского языка. Позволит динамически подгружать грамматические конструкции для шпаргалок. Реализация — после базовой версии шпаргалок.
+### Stage 2 — Cheat sheets
+Add the cheat sheets module (static reference: tenses, prepositions, pronouns).
+- Future integration with the English Constructicon API (https://englishconstructicon.bham.ac.uk/database/api): `GET /constructions` and `GET /constructions/{id}/`, no authentication, returns JSON with English constructions. Will allow loading grammar constructions for cheat sheets dynamically. Implementation comes after the basic cheat sheets version.
 
-### Этап 2.5 — Переводчик
-Переводчик EN↔RU. Отдельный модуль features/translator. Требует выбора внешнего API для перевода (кандидаты: FreeDict API, Google Translate API, DeepL). Реализуется после базовой версии шпаргалок.
+### Stage 2.5 — Translator
+EN↔RU translator. Standalone module `features/translator`. Requires choosing an external translation API (candidates: FreeDict API, Google Translate API, DeepL). Built after the basic cheat sheets version.
 
-### Этап 3 — Польза от словаря
-SRS-тренировка и дашборд прогресса. Максимальная отдача от уже собранных слов.
+### Stage 3 — Value from vocabulary
+SRS training and progress dashboard. Get the most out of words already collected.
 
-### Этап 4 — Расширение практики
-Аудирование (dictation/shadowing) и упражнения по грамматике из шпаргалок.
+### Stage 4 — Expand practice
+Listening (dictation/shadowing) and grammar exercises from cheat sheets.
 
-### Этап 5 — Мотивация и удобство
-Геймификация, слово дня, импорт/экспорт.
+### Stage 5 — Motivation and convenience
+Gamification, word of the day, import/export.
 
-## Приоритет
-Если выбирать одно — Этап 1 (связка поиска и словаря). Без личного словаря остальные модули (SRS, прогресс, геймификация) не имеют смысла.
+## Priority
+Currently in progress — Stage 1 (personal vocabulary and search integration). Without a personal vocabulary, the other modules (SRS, progress, gamification) do not add much value.
 
-## Соответствие структуре проекта
-- features/word-search — поиск слова (реализовано), слово дня (план).
-- features/vocabulary — личный словарь, SRS, импорт/экспорт (план).
-- features/translator — переводчик (план, Этап 2.5).
-- features/grammar — шпаргалки и упражнения (план).
-- features/progress — дашборд прогресса (план).
-- features/gamification — XP, достижения (план).
-- Глобальные сторы регистрируются в RootStore. Страницы в app/ остаются тонкими.
+## Project structure mapping
+- `features/word-search` — word search (shipped), word of the day (planned).
+- `features/vocabulary` — personal vocabulary (in progress), SRS and import/export (planned).
+- `features/translator` — translator (planned, Stage 2.5).
+- `features/grammar` — cheat sheets and exercises (planned).
+- `features/progress` — progress dashboard (planned).
+- `features/gamification` — XP, achievements (planned).
+- Global stores are registered in RootStore. Pages under `app/` stay thin.
 
-## Журнал изменений
-- 2026-11-10: Базовая страница поиска слова реализована. Создан высокоуровневый план.
-- 2026-11-10: Начат Этап 2 (шпаргалки). Переводчик выделен в отдельный этап 2.5. В план добавлена перспективная интеграция с English Constructicon API.
+## Changelog
+- 2026-11-10: Basic word search page shipped. High-level plan created.
+- 2026-11-10: Stage 2 (cheat sheets) started. Translator split into Stage 2.5. Added prospective English Constructicon API integration to the plan.
+- 2026-11-10: Personal vocabulary (Stage 1) taken into progress: module moved to “In progress”; focus — search integration and vocabulary list page.

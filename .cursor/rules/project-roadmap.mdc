@@ -1,10 +1,10 @@
 ---
-description: План развития проекта и список модулей EasyEnglish
+description: EasyEnglish project roadmap and module list
 alwaysApply: false
 ---
 
-# План развития проекта
+# Project roadmap
 
-При планировании новых фич, обсуждении архитектуры или выборе приоритетов сначала прочитай @docs/roadmap.md.
+When planning new features, discussing architecture, or choosing priorities, read @docs/roadmap.md first.
 
-Не начинай реализацию модуля из плана, если пользователь явно не попросил. План — это контекст, а не задача.
+Do not start implementing a module from the roadmap unless the user explicitly asks. The roadmap is context, not a task list.

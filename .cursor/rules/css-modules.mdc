@@ -1,13 +1,13 @@
 ---
-description: "Соглашения по CSS Modules"
+description: "CSS Modules conventions"
 globs: ["**/*.module.css"]
 alwaysApply: false
 ---
 
 # CSS Modules
 
-- Файл стилей лежит **в той же папке**, что и компонент/страница.
-- Имя файла: `[ComponentName].module.css` (совпадает с именем `.tsx` файла, но с суффиксом `.module`).
-- Имена классов — **camelCase** (`.userProfile`, `.submitButton`). Не используй kebab-case (`.user-profile`), чтобы не писать `styles['user-profile']`.
-- Если стиль используется только одним компонентом, он должен быть здесь, а не в общем файле.
-- Запрещено использовать `composes` для переиспользования стилей между компонентами. Дублируй стили или выноси в CSS-переменные в `:root` (но не создавай глобальный `.css` файл без `.module`, если это не `globals.css`, который вы уже настроили в Next.js).
+- The style file lives **in the same folder** as the component or page.
+- File name: `[ComponentName].module.css` (matches the `.tsx` file name with a `.module` suffix).
+- Class names use **camelCase** (`.userProfile`, `.submitButton`). Do not use kebab-case (`.user-profile`), so you avoid `styles['user-profile']`.
+- If a style is used by only one component, it belongs here, not in a shared file.
+- Do not use `composes` to share styles between components. Duplicate styles or move values into CSS variables on `:root` (but do not create a global `.css` file without `.module` unless it is `globals.css` as already configured in Next.js).

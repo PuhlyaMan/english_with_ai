@@ -1,31 +1,31 @@
 ---
-description: "Паттерны MobX 7 для React 19 без Provider/inject"
+description: "MobX 7 patterns for React 19 without Provider/inject"
 globs: ["src/stores/**/*.ts", "src/stores/**/*.tsx", "src/features/**/stores/**/*.ts"]
 alwaysApply: false
 ---
 
-# MobX 7 в EasyEnglish
+# MobX 7 in EasyEnglish
 
-## Создание стора
+## Creating a store
 
-- Используй `makeAutoObservable` из `mobx` в конструкторе.
-- **Не используй** декораторы. Предпочитай `makeAutoObservable`.
-- **Не используй** namespaced API вроде `observable.ref`, `computed.struct`, `action.bound`. В MobX 7 они заменены на именованные экспорты: `observableRef`, `computedStruct`, `actionBound`.
+- Use `makeAutoObservable` from `mobx` in the constructor.
+- **Do not** use decorators. Prefer `makeAutoObservable`.
+- **Do not** use namespaced APIs like `observable.ref`, `computed.struct`, `action.bound`. In MobX 7 they are replaced by named exports: `observableRef`, `computedStruct`, `actionBound`.
 
-## Провайдер стора (обязательный паттерн)
+## Store provider (required pattern)
 
-- **НЕ используй** `Provider` или `inject` из `mobx-react` / `mobx-react-lite` — они удалены.
-- Создай `StoreContext` через `React.createContext` в файле `src/stores/StoreContext.tsx` (с `'use client'`).
-- Создай хук `useStore()` для доступа к стору.
-- Создай `StoreProvider` (клиентский компонент) и оберни им `layout.tsx`.
+- **Do not** use `Provider` or `inject` from `mobx-react` / `mobx-react-lite` — they were removed.
+- Create `StoreContext` with `React.createContext` in `src/stores/StoreContext.tsx` (with `'use client'`).
+- Create a `useStore()` hook to access the store.
+- Create a `StoreProvider` (client component) and wrap `layout.tsx` with it.
 
-## Пример структуры
+## Example structure
 
-- `src/stores/RootStore.ts` — класс с `makeAutoObservable(this)`.
+- `src/stores/RootStore.ts` — class with `makeAutoObservable(this)`.
 - `src/stores/StoreContext.tsx` — `createContext`, `useStore`, `StoreProvider`.
-- **Не экспортируй синглтон-стор** (`export const store = new RootStore()`). Это ломает SSR в Next.js: состояние может «протечь» между запросами.
+- **Do not export a store singleton** (`export const store = new RootStore()`). That breaks SSR in Next.js: state can leak between requests.
 
 ## Observer
 
-- Компонент, читающий observables, **обязан** быть обёрнут в `observer` из `mobx-react-lite`. Без этого он отрендерится один раз и не будет обновляться [citation:10].
-- `observer` уже применяет `React.memo`; оборачивать его в `memo` дополнительно не нужно [citation:10].
+- A component that reads observables **must** be wrapped in `observer` from `mobx-react-lite`. Otherwise it renders once and never updates [citation:10].
+- `observer` already applies `React.memo`; you do not need to wrap it in `memo` again [citation:10].

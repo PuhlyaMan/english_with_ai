@@ -1,74 +1,74 @@
 ---
-description: Базовый стек, структура проекта и запрещённые паттерны EasyEnglish
+description: EasyEnglish core stack, project layout, and forbidden patterns
 alwaysApply: true
 ---
 
-# Стек проекта
+# Project stack
 
-- React 19, Next.js 16 (только App Router).
-- TypeScript 6.0 (строгий режим). Не используй синтаксис, доступный только в TS 7, если он не компилируется в 6.0.
-- Голый CSS через CSS Modules (.module.css). Никаких Tailwind, styled-components, SCSS или инлайн-стилей.
-- MobX 7 + mobx-react-lite 5 для глобального состояния. React 19, только функциональные компоненты.
-- Vitest 5 для тестов. Тесты лежат рядом с компонентами: ComponentName.test.tsx.
+- React 19, Next.js 16 (App Router only).
+- TypeScript 6.0 (strict mode). Do not use syntax that is only available in TS 7 unless it compiles under 6.0.
+- Plain CSS via CSS Modules (`.module.css`). No Tailwind, styled-components, SCSS, or inline styles.
+- MobX 7 + mobx-react-lite 5 for global state. React 19, functional components only.
+- Vitest 5 for tests. Tests live next to components: `ComponentName.test.tsx`.
 
-# Структура проекта
+# Project layout
 
 ```
-app/                        # В корне репозитория (Next.js App Router)
+app/                        # Repository root (Next.js App Router)
 ├── layout.tsx
 ├── page.tsx
 ├── api/
 └── ...
 
 src/
-├── components/             # Переиспользуемый UI без бизнес-логики (ui/, layout/)
-├── features/               # Бизнес-фичи (каждая самодостаточна)
+├── components/             # Reusable UI without business logic (ui/, layout/)
+├── features/               # Business features (each self-contained)
 │   └── feature-name/
 │       ├── components/
 │       ├── hooks/
 │       └── stores/
-├── stores/                 # Глобальные сторы (RootStore, StoreContext, useStore)
-├── lib/                    # Утилиты, хелперы, API-клиенты
-├── types/                  # Общие TypeScript-типы
-└── styles/                 # Глобальные стили (если нужны)
+├── stores/                 # Global stores (RootStore, StoreContext, useStore)
+├── lib/                    # Utilities, helpers, API clients
+├── types/                  # Shared TypeScript types
+└── styles/                 # Global styles (if needed)
 
-public/                     # Статика Next.js (favicon, изображения)
+public/                     # Next.js static assets (favicon, images)
 ```
 
-Правила размещения:
+Placement rules:
 
-- **app/** в корне проекта (не `src/app/`) — только маршрутизация: page, layout, loading, error, route handlers. Файлы тонкие: импортируют из `src/features/` или `src/components/` и рендерят.
-- **src/features/** — бизнес-логика. Фича не импортирует внутренности другой фичи; общее выносится в components/, lib/ или types/.
-- **src/components/** — переиспользуемый UI. Если компонент нужен одной фиче, он лежит внутри этой фичи.
-- Сторы: глобальные в `src/stores/`, локальные для фичи — в `features/*/stores/`.
-- PWA (manifest, service worker, install prompt) пока не реализуем — не добавляй без отдельной задачи.
+- **app/** at the project root (not `src/app/`) — routing only: page, layout, loading, error, route handlers. Files stay thin: import from `src/features/` or `src/components/` and render.
+- **src/features/** — business logic. A feature must not import another feature’s internals; shared code goes in `components/`, `lib/`, or `types/`.
+- **src/components/** — reusable UI. If a component is needed by a single feature, it lives inside that feature.
+- Stores: global in `src/stores/`, feature-local in `features/*/stores/`.
+- PWA (manifest, service worker, install prompt) is not implemented yet — do not add without a dedicated task.
 
-# Структура компонента
+# Component folder structure
 
-Каждый компонент хранится в отдельной папке с названием, совпадающим с именем компонента (например, Button/ для Button.tsx). Внутри этой папки лежат ВСЕ артефакты, относящиеся к компоненту:
+Each component lives in its own folder named after the component (e.g. `Button/` for `Button.tsx`). Everything for that component goes inside:
 
 ComponentName/
-├── ComponentName.tsx          # Код компонента
-├── ComponentName.module.css   # Стили (на уровне с компонентом)
-├── ComponentName.test.tsx     # Тесты (на уровне с компонентом)
-├── assets/                    # Статические файлы (изображения, иконки, шрифты, JSON)
+├── ComponentName.tsx          # Component code
+├── ComponentName.module.css   # Styles (sibling of the component file)
+├── ComponentName.test.tsx     # Tests (sibling of the component file)
+├── assets/                    # Static files (images, icons, fonts, JSON)
 │   └── ...
-└── ...                        # Другие артефакты компонента (подкомпоненты, хуки, если они относятся только к нему)
+└── ...                        # Other component artifacts (subcomponents, hooks used only here)
 
-Правила:
+Rules:
 
-- Папка компонента называется так же, как компонент (PascalCase).
-- Стили и тесты лежат на уровне с файлом компонента, НЕ в assets/.
-- Статические файлы (изображения, SVG, шрифты, JSON-данные) лежат в подпапке assets/ внутри папки компонента.
-- Если компонент использует статику, импорт идёт через относительный путь: ./assets/icon.svg.
-- Подкомпоненты, которые используются только этим компонентом, могут лежать в той же папке.
+- The folder name matches the component (PascalCase).
+- Styles and tests sit next to the component file, NOT in `assets/`.
+- Static files (images, SVG, fonts, JSON) go in `assets/` inside the component folder.
+- Import static assets with a relative path: `./assets/icon.svg`.
+- Subcomponents used only by this component may live in the same folder.
 
-# Запрещено
+# Forbidden
 
-- НИКОГДА не используй Pages Router (pages/), getServerSideProps, getStaticProps.
-- НИКОГДА не используй классовые компоненты. Только функции с хуками.
-- НИКОГДА не используй any в TypeScript.
-- НИКОГДА не создавай .css файлы без суффикса .module.
-- НИКОГДА не используй Provider, inject или MobXProviderContext из mobx-react или mobx-react-lite — они удалены в MobX 7 / mobx-react-lite 5. Для провайдера стора используй React.createContext.
-- НИКОГДА не размещай бизнес-логику или разметку в app/ — только импорт и рендер компонента из features/.
-- НИКОГДА не клади стили или тесты в assets/ — они лежат на уровне с компонентом.
+- NEVER use Pages Router (`pages/`), `getServerSideProps`, or `getStaticProps`.
+- NEVER use class components. Only functions with hooks.
+- NEVER use `any` in TypeScript.
+- NEVER create `.css` files without the `.module` suffix.
+- NEVER use `Provider`, `inject`, or `MobXProviderContext` from `mobx-react` or `mobx-react-lite` — they were removed in MobX 7 / mobx-react-lite 5. Use `React.createContext` for the store provider.
+- NEVER put business logic or markup in `app/` — only import and render components from `features/`.
+- NEVER put styles or tests in `assets/` — they belong next to the component file.

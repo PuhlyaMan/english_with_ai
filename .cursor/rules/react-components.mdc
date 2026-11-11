@@ -1,46 +1,46 @@
 ---
-description: Стандарты для React-компонентов EasyEnglish
+description: EasyEnglish React component standards
 globs: ["**/*.tsx", "!**/*.test.tsx", "!**/*.spec.tsx"]
 alwaysApply: false
 ---
 
-# React-компоненты
+# React components
 
-## Клиентские компоненты
+## Client components
 
-- ВСЕ компоненты в этом проекте клиентские. Начинай каждый .tsx файл с директивы 'use client' на первой строке (до импортов).
-- Не создавай серверные компоненты, даже если задача кажется статичной.
+- ALL components in this project are client components. Start every `.tsx` file with the `'use client'` directive on the first line (before imports).
+- Do not create server components, even if the task looks static.
 
-## Структура папки компонента
+## Component folder structure
 
-Каждый компонент лежит в собственной папке с именем компонента (PascalCase):
+Each component lives in its own folder named after the component (PascalCase):
 
 ComponentName/
 ├── ComponentName.tsx
 ├── ComponentName.module.css
 ├── ComponentName.test.tsx
-├── assets/                    # Только статика: изображения, SVG, шрифты, JSON
-└── ...                        # Подкомпоненты/хуки, если относятся только к этому компоненту
+├── assets/                    # Static only: images, SVG, fonts, JSON
+└── ...                        # Subcomponents/hooks if used only by this component
 
-- Стили (.module.css) и тесты (.test.tsx) лежат на уровне с файлом компонента, НЕ в assets/.
-- Статика (изображения, иконки, шрифты, JSON-данные) лежит в assets/ внутри папки компонента.
-- Импорт статики: ./assets/icon.svg.
-- Если компонент содержит подкомпоненты, используемые только им, они могут лежать в той же папке (например, ComponentName/SubComponent.tsx).
+- Styles (`.module.css`) and tests (`.test.tsx`) sit next to the component file, NOT in `assets/`.
+- Static assets (images, icons, fonts, JSON) go in `assets/` inside the component folder.
+- Import static assets as `./assets/icon.svg`.
+- Subcomponents used only by this component may live in the same folder (e.g. `ComponentName/SubComponent.tsx`).
 
-## Структура файла компонента
+## Component file structure
 
-1. 'use client'
-2. Импорты (React, Next.js, MobX, стили, статика, другие компоненты).
-3. Интерфейс пропсов: interface [ComponentName]Props { ... } (над компонентом).
-4. Функция компонента: export function ComponentName({ ... }: ComponentNameProps) { ... }.
-5. Если компонент использует MobX-стор, оберни его в observer из mobx-react-lite и используй хук useStore из @/stores/useStore.
+1. `'use client'`
+2. Imports (React, Next.js, MobX, styles, static assets, other components).
+3. Props interface: `interface [ComponentName]Props { ... }` (above the component).
+4. Component function: `export function ComponentName({ ... }: ComponentNameProps) { ... }`.
+5. If the component uses a MobX store, wrap it in `observer` from `mobx-react-lite` and use the `useStore` hook from `@/stores/useStore`.
 
-## Размер
+## Size
 
-- Компонент не должен превышать 200 строк. Если файл растёт больше, выноси подкомпоненты в отдельные файлы в той же папке.
-- Если компонент содержит сложную логику (больше 2-3 хуков useState/useEffect), выноси её в кастомный хук в отдельный файл use[Name].ts в той же папке.
+- A component file must not exceed 200 lines. If it grows larger, extract subcomponents into separate files in the same folder.
+- If the component has complex logic (more than 2–3 `useState`/`useEffect` hooks), move it into a custom hook in a separate `use[Name].ts` file in the same folder.
 
-## Стили
+## Styles
 
-- Каждый компонент использует свой CSS Module: import styles from './ComponentName.module.css'.
-- Имена классов в CSS пиши в camelCase (например, .userProfile), чтобы обращаться к ним как styles.userProfile.
+- Each component uses its own CSS Module: `import styles from './ComponentName.module.css'`.
+- Use camelCase class names in CSS (e.g. `.userProfile`) so you can access them as `styles.userProfile`.
